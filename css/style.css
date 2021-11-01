@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff: 'Lobster',cursive;
+}
+
+
+.countdown-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,rgba(196, 248, 8, 0.432) 30%,rgba(248, 8, 8, 0.801)100%), url(../images/nweyear.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-container .year-cotainer{
+    flex-basis: 10%;
+    
+}
+
+.countdown-container .year-cotainer #year{
+    font-size: 275px;
+    font-family: var(--ff);
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    /* writing-mode: sideways-lr;
+    -webkit-writing-mode: sideways-lr;
+    -ms-writing-mode: sideways-lr; */
+    background: -webkit-linear-gradient(#ff0e06e5,#1f09e79c);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.countdown-container .month-container{
+    flex-basis: 90%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.month-container .time {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(hsla(88, 94%, 52%, 0.945), rgba(247, 25, 10, 0.658));
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.month-container .time h4{
+    font-family: var(--ff);
+    font-size: 42px;
+    background: -webkit-linear-gradient(#0467fa, #f805f8);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.month-container .time p{
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(#f805f8, #0467fa);
+    background-clip: text;
+    color: transparent;
+}
