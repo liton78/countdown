@@ -86,7 +86,9 @@
 .month-container .time p{
     font-size: 22px;
     font-weight: bold;
-    background: linear-gradient(#f805f8, #0467fa);
+    background: -webkit-linear-gradient(#f805f8, #0467fa);
     background-clip: text;
     color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
